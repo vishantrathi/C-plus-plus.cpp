@@ -1,28 +1,50 @@
 #include <iostream>
 #include <string>
 
-bool isSingleLineComment(const std::string& line) {
-    return line.find("//") != std::string::npos;
-}
+class CommentChecker {
+public:
+    std::string check(const std::string& line) {
+        std::string trimmedLine = line;
 
-bool isMultiLineCommentStart(const std::string& line) {
-    return line.find("/*") != std::string::npos;
-}
+        // Remove leading whitespace
+        trimmedLine.erase(0, trimmedLine.find_first_not_of(" \t"));
 
-bool isMultiLineCommentEnd(const std::string& line) {
-    return line.find("*/") != std::string::npos;
-}
+        // Check for single-line comment
+        if (trimmedLine.find("//") == 0) {
+            return "Single-line comment";
+        }
+
+        // Check for multiline comment
+        if (trimmedLine.find("/*") == 0 && trimmedLine.find("*/") != std::string::npos) {
+            return "Multiline comment";
+        }
+
+        // Check for potential multiline comment (not complete)
+        if (trimmedLine.find("/*") != std::string::npos && trimmedLine.find("*/") == std::string::npos) {
+            return "Potential multiline comment (not complete)";
+        }
+
+        return "Not a comment";
+    }
+};
 
 int main() {
-    std::string line1 = "// This is a single-line comment";
-    std::string line2 = "/* This is a multiline comment start";
-    std::string line3 = "This is inside a multiline comment */";
-    std::string line4 = "int main() { return 0; }";
+    CommentChecker checker;
+    std::string line;
 
-    std::cout << "Line 1: " << (isSingleLineComment(line1) ? "Single-line comment" : "Not a comment") << std::endl;
-    std::cout << "Line 2: " << (isMultiLineCommentStart(line2) ? "Multiline comment start" : "Not a comment") << std::endl;
-    std::cout << "Line 3: " << (isMultiLineCommentEnd(line3) ? "Multiline comment end" : "Not a comment") << std::endl;
-    std::cout << "Line 4: " << (isSingleLineComment(line4) ? "Single-line comment" : "Not a comment") << std::endl;
+    std::cout << "Enter a line of code (type 'exit' to quit):\n";
+
+    while (true) {
+        std::getline(std::cin, line);
+
+        // Check for exit condition
+        if (line == "exit") {
+            break;
+        }
+
+        std::string result = checker.check(line);
+        std::cout << "Line: " << line << "\nResult: " << result << "\n\n";
+    }
 
     return 0;
 }
