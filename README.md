@@ -1,31 +1,41 @@
 # C-plus-plus.cpp
 
-Welcome to the C-plus-plus.cpp repository! This repository contains various C++ programs and algorithms. Feel free to explore,, and learn.
+## Overview
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Introduction
-
-This repository is a collection of C++ programs and algorithms that cover a wide range of topics, including data structures, algorithms, and more. It is designed to help beginners and experienced developers alike to improve their C++ skills.
+This repository contains C++ programs covering various concepts, algorithms, and data structures. It serves as a resource for learning and improving C++ programming skills.
 
 ## Features
 
-- Various C++ programs and algorithms
-- Well-documented code
-- Easy to understand and use
-- Regular updates and improvements
+- **Basic C++ Programs**: Covers fundamental syntax, control structures, and data types.
+- **Data Structures**: Implementation of arrays, linked lists, stacks, queues, trees, and graphs.
+- **Algorithms**: Sorting, searching, recursion, dynamic programming, and more.
+- **OOP Concepts**: Classes, objects, inheritance, polymorphism, encapsulation, and abstraction.
 
-## Installation
+## Getting Started
 
-To get started with this repository, follow these steps:
+### Prerequisites
+
+- A C++ compiler (GCC, Clang, or MSVC)
+- A code editor (VS Code, Code::Blocks, CLion, etc.)
+
+### Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/vishantrathi/C-plus-plus.cpp.git
+
+   ```sh
+   git clone https://github.com/vishantrathi/C-plus-plus.cpp
+   ```
+
+2. Navigate to the project folder:
+
+   ```sh
+   cd C-plus-plus.cpp
+   ```
+
+3. Compile and run a C++ program:
+
+   ```sh
+   g++ filename.cpp -o output
+   ./output
+   ```
+
