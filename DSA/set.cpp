@@ -11,5 +11,4 @@ void set(){
 
     st.erase(5)
 
-    int cnt =st.find(1);
-}
+    
