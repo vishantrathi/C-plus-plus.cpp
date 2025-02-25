@@ -5,10 +5,3 @@ void set(){
     st.insert(4);
     st.insert(5);
 
-    auto it = st.find(3);
-
-    auto it = st.find(6);
-
-    st.erase(5)
-
-    
