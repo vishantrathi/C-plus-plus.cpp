@@ -1,5 +1,4 @@
-#include <iostream>
-#include <cmath>
+#include<bits/stdc++.h>
 using namespace std;
 
 void primeFactors(int n)
@@ -26,8 +25,6 @@ void primeFactors(int n)
         cout << n;
     }
 }
-
-// Test the function
 int main()
 {
     primeFactors(315);
