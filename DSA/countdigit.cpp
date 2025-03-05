@@ -14,8 +14,6 @@
 // Explanation: Here among 2, 4, 6 only 2 divides 2446 evenly while 4 and 6 do not.
 #include <iostream>
 using namespace std;
-
-// Function to count the number of digits in n that evenly divide n
 int countDividingDigits(int n) {
     int count = 0;
     int original = n;
