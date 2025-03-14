@@ -2,8 +2,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void printName(int i,int n){
-    if(i>n){                   // i > n, and if so, it stops further execution using return
+void printName(int i,int n){    // i > n, and if so, it stops further execution using return
+    if(i>n){                   
     return;
 }
 cout<<"Vishant Rathi"<<endl;
