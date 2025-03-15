@@ -6,7 +6,7 @@ void printlinearly(int i, int n) {
         return;
     }
     printlinearly(i - 1, n); 
-    cout << i << " "; 
+    cout << i << " "<<endl; 
 }
 
 int main() {
