@@ -1,3 +1,4 @@
+//PrintLinearlyFrom(N-1)
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -6,7 +7,7 @@ void printlinearly(int i, int n) {
         return;
     }
     printlinearly(i - 1, n); 
-    cout << i << " "<<endl; 
+    cout << i << " "; 
 }
 
 int main() {
