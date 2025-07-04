@@ -36,17 +36,14 @@ int main(){
     int n;
     cout << "Enter a number: ";
     cin >> n;
-    bool isPrime = true;
-    if (n <= 1) {
-        isPrime = false; 
-    } else {
         int i = 2;
-        while (i * i <= n) { // Check divisibility up to the square root of n
-            if (n % i == 0) {
-                isPrime = false; // Found a divisor, so it's not prime
-                break;
-            }
-            i++;
+        while (i<n){
+        if(n%i==0){
+            cout<<"not a prime number for"<<i<<endl;
         }
+        else{
+            cout<<"Prime number for"<<i<<endl;
+        }
+           i = i+1;
     }
 }
