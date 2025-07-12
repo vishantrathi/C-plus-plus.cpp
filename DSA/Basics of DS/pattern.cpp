@@ -51,22 +51,96 @@ int main(){
 
 
     //Pattern 4
-    int n;
-    cout<<"Enter a number"<<endl;
-    cin>>n;
-    int count=1;
-    int row=1;
-        while(row<=n){
-            int col=1;
-            
-            while(col<=row){
-                cout<<" "<<count;
-                count++;
-                col=col+1;
-             
-            }
-            cout<<endl;
-            row=row+1;
+    // int n;
+    // cout<<"Enter a number"<<endl;
+    // cin>>n;
+    // int count=1;
+    // int row=1;
+    //     while(row<=n){
+    //         int col=1;       
+    //         while(col<=row){
+    //             cout<<" "<<count;
+    //             count++;
+    //             col=col+1;       
+    //         }
+    //         cout<<endl;
+    //         row=row+1;
+    //     }
 
-        }
-    }
+    //Pattern 5
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while(row<=n){
+    //     int col=1;
+    //     int value=row;
+    //     while (col<=row){
+    //         cout<<value;
+    //         value=value+1;
+    //         col=col+1;
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+
+    //Patten 6
+    // int n;
+    // cin>>n;
+
+    // int row=1;
+    // while(row<=n){
+    //     int col=1;
+    //     while(col<=row){
+    //         cout<<row-col+1<<" ";
+    //         col=col+1;
+    //     }
+    //     cout<<endl;
+    //     row=row+1;  
+    // }
+
+    //Pattern 7
+    // int n;
+    // cin>>n;
+
+    // int row=1;
+    // while(row<=n){
+    //     int col=1;
+    //     while(col<=row){
+    //         char ch='A'+row-1;  //using ascii values to print b,c,d;
+    //         cout<< ch;
+    //         col=col+1;
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+
+    //Pattern 8
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int col=1;
+    //     int count=1;
+    //     while (col<=row)
+    //     {
+    //         cout<<count;
+    //         count++;
+    //         col=col+1;
+    //     }
+    //     row=row+1;
+    //     cout<<endl;   
+    // }
+
+    //Pattern 9
+
+    int n;
+    cin>>n;
+    
+
+
+
+
+    
+}
