@@ -15,18 +15,31 @@ using namespace std;
 // cout<<ans;
 // return 0;
 
-bool isEven(int a)
-{
-    if(a&1){
-        return 0;
+
+// bool isEven(int a) {
+//     return !(a & 1); // returns true if even, false if odd
+// }
+
+// int main() {
+//     int num;
+//     cin >> num;
+    
+//     if (isEven(num)) {
+//         cout << num << " is even" << endl;
+//     } else {
+//         cout << num << " is odd" << endl;
+//     }
+// }
+
+int factorial(int n){
+    int fact =1;
+    for(int i=1; i<=n;i++){
+        fact=fact*i;
     }
-    else{
-        return 1;
-    }
+    return fact;
 }
 
-int main(){
-    int num;
-    cin>>num;
-
+int ncr(int n,int r){
+    int num =fact(n);
+    int denom=
 }
