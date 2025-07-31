@@ -70,3 +70,24 @@ using namespace std;
 //     printcounting(n);
 //     return 0;
 // }
+
+//Prime or not
+bool isprimeno(int n){
+    for(int i=2; i<n; i++){
+        if(n%i==0){
+            return 0;
+        }
+    }
+    return 1;
+}
+int main(){
+    int n;
+    cin>>n;
+    if(isprimeno(n)){
+        cout<<"It is prime"<<endl;
+    }
+    else{
+        cout<<"Not a prime"<<endl;
+    }
+}
+
