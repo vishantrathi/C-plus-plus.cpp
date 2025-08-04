@@ -23,6 +23,9 @@ for(int i=0;i<size;i++){
     cin>>num[i];
 
 }
+ cout << " Maximum value is " << getMax(num, size) << endl;
+    cout << " Minimum value is " << getMin(num, size) << endl;
+        return 0;
 
 
 
