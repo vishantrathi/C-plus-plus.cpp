@@ -8,10 +8,10 @@
 // Theta Oh
 // Omega Oh
 
-constant time = o(1)
-linear time= o(n)
-log time=0(logn)
-quadatic time= o(n2)
-cubic time=o(n3)
+// constant time = o(1)
+// linear time= o(n)
+// log time=0(logn)
+// quadatic time= o(n2)
+// cubic time=o(n3)
 
 

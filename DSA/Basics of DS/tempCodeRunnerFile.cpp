@@ -1,1 +1,1 @@
-answer is
+ mid=(start+end/2);
