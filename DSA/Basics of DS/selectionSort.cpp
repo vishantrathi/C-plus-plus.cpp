@@ -29,10 +29,14 @@ int arr[5]={8,10,17,1,3};
 cout<<"pivot is "<<getpivot(arr,5)<<endl;
 }
 
-// Pivot element in a rotated sorted array
-
+// Pivot element in a rotated sorted array 
 // A sorted array is rotated at some point.
-
 // The pivot element is simply the smallest element in the rotated array.
-
 // Its index is called the pivot index.
+// Complexity Analysis of Selection Sort
+// Time Complexity: O(n2) ,as there are two nested loops:
+
+// One loop to select an element of Array one by one = O(n)
+// Another loop to compare that element with every other Array element = O(n)
+// Therefore overall complexity = O(n) * O(n) = O(n*n) = O(n2)
+// Auxiliary Space: O(1) as the only extra memory used is for temporary variables.
