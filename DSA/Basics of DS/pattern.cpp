@@ -227,11 +227,20 @@ int main(){
 
 
 //pattern 17
-int num =1;
+// int num =1;
+// for(int i=0;i<=4;i++){
+//     for (int j=0;j<=i;j++){
+//         cout<<num << " ";
+//         num++;
+//     }
+//     cout<<endl;
+// }
+
+
+// pattern 18
 for(int i=0;i<=4;i++){
     for (int j=0;j<=i;j++){
-        cout<<num << " ";
-        num++;
+        cout<<i+1;
     }
     cout<<endl;
 }
