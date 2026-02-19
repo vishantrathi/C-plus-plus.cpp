@@ -2,44 +2,48 @@
 using namespace std;
 
 void pattern(int n){
-    int iniS=0;
+
+    // Upper part
     for(int i=0;i<n;i++){
-        for(int j=1;j<n-i;j++){
+
+        for(int j=1;j<=n-i;j++){
             cout<<"*";
         }
-        for(int j=0;j<=iniS;j++){
+
+        for(int j=0;j<2*i;j++){
             cout<<" ";
         }
-        for(int j=1;j<n-i;j++){
+
+        for(int j=1;j<=n-i;j++){
             cout<<"*";
         }
-        iniS +=2;
+
         cout<<endl;
     }
-    int iniSpace=8;
-    for(int i=0;i<n;i++){
+
+    // Lower part
+    for(int i=1;i<=n;i++){
+
         for(int j=1;j<=i;j++){
             cout<<"*";
         }
-        for(int j=0;j<=iniSpace;j++){
+
+        for(int j=0;j<2*(n-i);j++){
             cout<<" ";
-
         }
+
         for(int j=1;j<=i;j++){
             cout<<"*";
         }
 
-        
-        iniS -=2;
         cout<<endl;
-
     }
 }
-
 
 int main(){
     int n;
     cin>>n;
     pattern(n);
-
 }
+
+//r
