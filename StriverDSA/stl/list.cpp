@@ -9,13 +9,10 @@ void explist(){
     l.emplace_front(4);//4 3 1 2
 
     for(auto y:l){
-        cout<<y<<" ";
+        cout<<y<<" ";//4 3 1 2 
     }
-
     // rest fn same as vector
-
 }
 int main(){
     explist();
-
 }

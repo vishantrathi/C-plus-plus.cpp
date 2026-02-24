@@ -8,13 +8,19 @@ void expStack(){
     st.emplace(6);
     st.emplace(5);
 
-    st.pop();
+    // st.pop();
 
-    cout<<st.top()<<endl;
-    cout<<st.size()<<endl;
-    cout<<st.empty()<<endl;
+    // cout<<st.top()<<endl;
+    // cout<<st.size()<<endl;
+    // cout<<st.empty()<<endl;
 
-    //indexing is not allowed in stack
+    //indexing is not allowed in stack and iteration also
+
+
+    while(!st.empty()){
+        cout<<st.top()<<" ";
+        st.pop();
+    }
 
 
 
