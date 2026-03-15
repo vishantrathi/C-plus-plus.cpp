@@ -1,6 +1,5 @@
-DSA/pattern4.exe
-DSA/.vscode/settings.json
-DSA/.vscode/settings.json
-DSA/.vscode/settings.json
-DSA/.vscode/settings.json
-DSA/.vscode/settings.json
+*.exe
+*.out
+*.o
+.vscode/
+build/
