@@ -41,10 +41,10 @@ void mergeSort(int arr[], int l, int r){
 
     int mid = (l + r) / 2;
 
-    mergeSort(arr,l,mid);
-    mergeSort(arr,mid+1,r);
+    mergeSort(arr,l,mid); // split left
+    mergeSort(arr,mid+1,r); // split right
 
-    merge(arr,l,mid,r);
+    merge(arr,l,mid,r); //merge the array
 }
 
 int main(){
